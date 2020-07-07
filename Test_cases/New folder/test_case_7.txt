@@ -1,0 +1,7 @@
+main:addi $s0,$zero,3   
+addi $s1,$zero,2   
+sll $s2,$s1,2    
+and $t0,$s0,$s1    
+or $t1, $s0, $s1  
+add $s3, $s0, $s1     
+addi $s1, $t1, -2  

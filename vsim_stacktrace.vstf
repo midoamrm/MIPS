@@ -1,0 +1,31 @@
+# Current time Fri Nov 22 20:46:36 2019
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5c"
+# Version = "2017.01"
+# Date = "Jan 23 2017"
+# Platform = win32pe
+# Signature = 5e7f9b833961c34eb19f3225262e3a77
+# 0    0x00cb355a: '<unknown (@0xcb355a)>'
+# 1    0x00cb16d3: '<unknown (@0xcb16d3)>'
+# 2    0x005f5f0e: '<unknown (@0x5f5f0e)>'
+# 3    0x01148ccb: '<unknown (@0x1148ccb)>'
+# 4    0x00caf21d: '<unknown (@0xcaf21d)>'
+# 5    0x00601d70: '<unknown (@0x601d70)>'
+# 6    0x00601f58: '<unknown (@0x601f58)>'
+# 7    0x00601fd4: '<unknown (@0x601fd4)>'
+# 8    0x005fb7df: '<unknown (@0x5fb7df)>'
+# 9    0x005fb745: '<unknown (@0x5fb745)>'
+# 10   0x0082a32a: '<unknown (@0x82a32a)>'
+# 11   0x0092832d: '<unknown (@0x92832d)>'
+# 12   0x77cb09f1: 'EtwRegisterTraceGuidsW + 0x2a1' in 'c:\windows\system32\ntdll.dll'
+# 13   0x77cb3b7f: 'RtlUnwind + 0x1cf' in 'c:\windows\system32\ntdll.dll'
+# 14   0x77cbcd86: 'KiUserExceptionDispatcher + 0x26' in 'c:\windows\system32\ntdll.dll'
+# 15   0x00cb16d3: '<unknown (@0xcb16d3)>'
+# 16   0x00520f89: '<unknown (@0x520f89)>'
+# 17   0xfefd2404: 'C:/Users/Mohammed Emad/Desktop/MIPS project/RF.v:23'
+# 18   0x00caf0b4: '<unknown (@0xcaf0b4)>'
+# 19   0x005079d8: '<unknown (@0x5079d8)>'
+# End of Stack Trace
+
+

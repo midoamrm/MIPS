@@ -1,0 +1,10 @@
+main:add $s2, $zero, $zero
+For: slt $t0, $s2, $s3
+beq $t0, $zero, Exit
+sll $t1, $s2, 2
+add $t1, $t1, $s4
+lw $t2, 0 ($t1)
+add $s1, $s1, $t2
+addi $s2, $s2, 1
+j For
+Exit:

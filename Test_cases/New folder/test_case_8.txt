@@ -1,0 +1,9 @@
+main:addi $s0,$zero,10 
+addi $s1,$zero,5
+add $a0, $s0, $zero
+add $a1, $s1, $zero
+jal sum
+j exit
+sum: add $v0,$a0,$a1
+jr $ra
+exit:

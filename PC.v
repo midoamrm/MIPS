@@ -1,0 +1,203 @@
+module program_counter (clk, pcin, pcout,pcout4,op_code,move_data,IOrequest);
+
+input  clk;
+input [31:0] pcin;
+output reg [31:0] pcout;
+output reg [31:0] pcout4; 
+integer flag = 0 ;     
+integer file;
+integer i;  
+input[5:0]op_code; 
+integer flag2;
+input[15:0]move_data;
+integer memory;
+output reg IOrequest;
+
+initial
+begin
+flag2=0;memory=0;IOrequest=0;
+end
+
+always @(posedge clk)
+      begin
+IOrequest=0;
+if (! flag)
+begin
+pcout = 0 ;
+flag <= 1 ;
+pcout4 <= pcout + 4;
+end 
+       
+else if(pcin<32764) 
+begin 
+//pcout <= pcin;
+if(op_code!=56 && op_code!=57 && op_code!=59)begin pcout = pcin;pcout4 = pcout + 4; end
+else if(op_code==56)
+begin
+if(flag2==0)
+begin
+pcout = pcin-4;pcout4 = pcout + 4; 
+flag2=flag2+1;
+end
+else if(flag2==1)
+begin
+ pcout = pcin;pcout4 = pcout + 4; 
+flag2=0;
+end
+end
+else if(op_code==57)
+begin
+if(move_data>8191*4) //source is io
+begin
+memory=0;
+if(flag2==0)
+begin
+pcout = pcin-4;pcout4 = pcout + 4; 
+flag2=flag2+1;
+end
+else if(flag2==1)
+begin
+pcout = pcin-4;pcout4 = pcout + 4;  
+flag2=flag2+1;
+end
+else if(flag2==2)
+begin
+pcout = pcin-4;pcout4 = pcout + 4;  
+flag2=flag2+1;
+end
+else if(flag2==3)
+begin
+pcout = pcin;pcout4 = pcout + 4;  
+flag2=0;
+end
+end
+
+else if(move_data<=8191*4) //source is memory
+begin
+memory=1;
+if(flag2==0)
+begin
+pcout = pcin-4;pcout4 = pcout + 4; 
+flag2=flag2+1;
+end
+else if(flag2==1)
+begin
+pcout = pcin-4;pcout4 = pcout + 4;  
+flag2=flag2+1;
+end
+else if(flag2==2)
+begin
+pcout = pcin-4;pcout4 = pcout + 4;  
+flag2=flag2+1;
+end
+else if(flag2==3)
+begin
+pcout = pcin;pcout4 = pcout + 4;  
+flag2=0;
+end
+end
+end
+
+else if(op_code==59)
+begin
+if(move_data<=8191*4 && memory)// mem to mem
+begin
+memory=0;
+if(flag2==0)
+begin
+pcout = pcin-4;pcout4 = pcout + 4; 
+flag2=flag2+1;
+end
+else if(flag2==1)
+begin
+pcout = pcin-4;pcout4 = pcout + 4;  
+flag2=flag2+1;
+end
+else if(flag2==2)
+begin
+pcout = pcin-4;pcout4 = pcout + 4;  
+flag2=flag2+1;
+end
+else if(flag2==3)
+begin
+pcout = pcin;pcout4 = pcout + 4;  
+flag2=0;
+end
+end
+
+else if(move_data>8191*4 && memory)//mem to io
+begin
+if(flag2==0)
+begin
+pcout = pcin-4;pcout4 = pcout + 4; 
+flag2=flag2+1;
+end
+else if(flag2==1)
+begin
+pcout = pcin;pcout4 = pcout + 4;  
+flag2=0;
+IOrequest=1;
+memory=0;
+end
+end
+
+else if(move_data<=8191*4 && !memory) //io to mem
+begin
+if(flag2==0)
+begin
+pcout = pcin-4;pcout4 = pcout + 4; 
+flag2=flag2+1;
+end
+else if(flag2==1)
+begin
+pcout = pcin;pcout4 = pcout + 4;  
+flag2=0;
+IOrequest=1;
+memory=0;
+end
+end
+
+end
+//end of if(op_code==58)
+
+
+end
+
+else
+begin
+
+$stop;
+//$finish ;
+$monitor ("h555h");
+end
+
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+always @(negedge clk)
+begin
+
+if(flag)
+begin
+file = $fopen("C:\\Users\\Mohammed Emad\\Desktop\\MIPS project\\Printing\\out_pc.txt" , "a+");
+//@(posedge clk);
+$display("PC =%d",pcout);
+$fdisplay(file,"%d\n",pcout);
+$fclose(file);
+end
+end
+
+endmodule
+
+

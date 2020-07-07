@@ -1,0 +1,6 @@
+main:addi $s0,$zero,5  
+addi $s1,$zero,6
+and $t0,$s0,$s1 
+or $t1, $s0, $s1
+add $s1, $s0, $zero 
+sub $s1, $t1, $t0 

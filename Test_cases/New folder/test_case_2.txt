@@ -1,0 +1,8 @@
+main:addi $t0,$zero,101
+addi $t1,$zero,1
+add $s0,$zero,$zero
+loop:add $s0,$s0,$t1
+addi $t1,$t1,1
+beq $t1,$t0,exit
+j loop
+exit:

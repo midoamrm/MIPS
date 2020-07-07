@@ -1,0 +1,133 @@
+{C:/Users/Mohammed Emad/Desktop/MIPS project/Control.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/Control.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module ALU_Control
+
+Top level modules:
+	ALU_Control
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/DMA_registers_data.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/DMA_registers_data.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module DMA_registers_data
+-- Compiling module tb_rrrr
+
+Top level modules:
+	tb_rrrr
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/Data_Memory.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/Data_Memory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module dataMemory
+
+Top level modules:
+	dataMemory
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/ALU.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/ALU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/clock.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/clock.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module clock_gen
+-- Compiling module clock
+
+Top level modules:
+	clock
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/Sign_Extension.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/Sign_Extension.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module sign_extend
+
+Top level modules:
+	sign_extend
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/Instruction_Register.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/Instruction_Register.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module instruction_reg
+
+Top level modules:
+	instruction_reg
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/IM.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/IM.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module instruction_memory
+
+Top level modules:
+	instruction_memory
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/Prephiral.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/Prephiral.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module io1
+
+Top level modules:
+	io1
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/MUX_2to1.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/MUX_2to1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module Mux2to1_ir
+-- Compiling module Mux2to1_alu
+-- Compiling module Mux3to1_31bit
+-- Compiling module Mux3to1_5bit
+
+Top level modules:
+	Mux2to1_ir
+	Mux2to1_alu
+	Mux3to1_31bit
+	Mux3to1_5bit
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/SLL_Generic.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/SLL_Generic.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module Sll_Generic
+
+Top level modules:
+	Sll_Generic
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/Adder.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/Adder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module adder
+-- Compiling module And
+
+Top level modules:
+	adder
+	And
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/control_mux.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/control_mux.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module control_signal_mux
+
+Top level modules:
+	control_signal_mux
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/Top.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/Top.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module mips
+
+Top level modules:
+	mips
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/PC.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/PC.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module program_counter
+
+Top level modules:
+	program_counter
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/Jump.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/Jump.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module SLL_26
+-- Compiling module SLL_32
+-- Compiling module jumbFullAddress
+
+Top level modules:
+	SLL_32
+	jumbFullAddress
+
+} {} {}} {C:/Users/Mohammed Emad/Desktop/MIPS project/RF.v} {1 {vlog -work work -stats=none {C:/Users/Mohammed Emad/Desktop/MIPS project/RF.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module resfile
+
+Top level modules:
+	resfile
+
+} {} {}}
